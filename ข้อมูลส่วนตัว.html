@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รับสมัครนักศึกษาใหม่</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <img src="img/banner.jpg" alt="โลโก้ มจพ.">
+        </header>
+
+        <!-- Admission Bar -->
+
+        <div class="admission">
+
+            <div>
+                <img src="img/ADMISSION.png" alt="ADMISSION" width="380" height="70">
+            </div>
+            <div class="page-tools">
+
+                <div class="page-title">
+                    <h2>กรอกใบสมัคร</h2>
+                    <h5>กรุณากรอกข้อมูลให้ครบถ้วนและถูกต้อง เพื่อใช้ในการสมัครเข้าศึกษาต่อ</h5>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="ค้นหาหลักสูตร / คณะ / สาขา">
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+            </div>
+
+
+            <button class="sign-in" onclick="window.location.href='เข้าสู่ระบบ.html'">
+
+                <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+                <i class="bi bi-person"></i>
+                &nbsp; Sign in
+            </button>
+
+        </div>
+
+        <div class="main">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <a href="index.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>หน้าหลัก</span>
+                    </div>
+                </a>
+                <a href="หลักสูตรทั้งหมด.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-list"></i>
+                        <span>หลักสูตรทั้งหมด</span>
+                    </div>
+                </a>
+                <a href="รายละเอียดการสมัคร.html">
+                    <div class="menu active">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span>รายละเอียดการสมัคร</span>
+                    </div>
+                </a>
+                <a href="ข้อมูลส่วนตัว.html">
+                    <div class="menu active">
+                        <i class="fa-regular fa-rectangle-list"></i>
+                        <span>กรอกใบสมัคร</span>
+                    </div>
+                </a>
+                <a href="ติดต่อเรา.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>ติดต่อเรา</span>
+                    </div>
+                </a>
+            </aside>
+
+            <div class="personal-content">
+
+                <div class="personal-steps">
+
+                    <div class="personal-step personal-step-active">
+                        <div class="personal-step-number">1</div>
+                        <span>ข้อมูลส่วนตัว</span>
+                    </div>
+
+                    <div class="personal-step">
+                        <div class="personal-step-number">2</div>
+                        <span>ข้อมูลการศึกษา</span>
+                    </div>
+
+                    <div class="personal-step">
+                        <div class="personal-step-number">3</div>
+                        <span>ข้อมูลเพิ่มเติม</span>
+                    </div>
+
+                    <div class="personal-step">
+                        <div class="personal-step-number">4</div>
+                        <span>ตรวจสอบข้อมูล</span>
+                    </div>
+
+                </div>
+
+
+                <form class="personal-form" action="ข้อมูลการศึกษา.html" method="get">
+
+                    <div class="personal-form-title">
+                        <i class="fa-solid fa-user"></i>
+                        <h2>1. ข้อมูลส่วนตัว</h2>
+                    </div>
+
+
+                    <div class="personal-form-body">
+
+                        <div class="personal-field">
+                            <label>เลขบัตรประชาชน <span>*</span></label>
+                            <input type="text" placeholder="กรอกเลขบัตรประชาชน" pattern="[0-9]{13}" maxlength="13"
+                                inputmode="numeric" required>
+                        </div>
+
+                        <div class="personal-field">
+                            <label>คำนำหน้า <span>*</span></label>
+                            <select required>
+                                <option value="">เลือกคำนำหน้า</option>
+                                <option>นาย</option>
+                                <option>นางสาว</option>
+                                <option>นาง</option>
+                            </select>
+                        </div>
+
+                        <div class="personal-field">
+                            <label>ชื่อ <span>*</span></label>
+                            <input type="text" placeholder="กรอกชื่อ" required>
+                        </div>
+
+                        <div class="personal-field">
+                            <label>นามสกุล <span>*</span></label>
+                            <input type="text" placeholder="กรอกนามสกุล" required>
+                        </div>
+
+                        <div class="personal-field">
+                            <label>วันเกิด <span>*</span></label>
+                            <input type="date" required>
+                        </div>
+
+                        <div class="personal-field">
+                            <label>เบอร์โทรศัพท์ <span>*</span></label>
+                            <input type="tel" placeholder="กรอกเบอร์โทรศัพท์" pattern="[0-9]{10}" maxlength="10"
+                                inputmode="numeric" required>
+                        </div>
+
+                        <div class="personal-field">
+                            <label>อีเมล <span>*</span></label>
+                            <input type="email" placeholder="กรอกอีเมล" required>
+                        </div>
+
+                        <div class="personal-field">
+                            <label>เพศ <span>*</span></label>
+
+                            <div class="personal-gender">
+                                <label>
+                                    <input type="radio" name="gender" required>
+                                    ชาย
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="gender">
+                                    หญิง
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="personal-field">
+                            <label>รูปถ่าย <span>*</span></label>
+
+                            <label class="personal-photo">
+                                <i class="fa-solid fa-camera"></i>
+                                <span>คลิกเพื่ออัปโหลดรูป</span>
+
+                                <input type="file" accept=".jpg,.jpeg,.png" required>
+                            </label>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ช่องกรอกข้อมูลทั้งหมด -->
+
+                    <div class="personal-buttons">
+
+                        <button type="reset" class="review-back">
+                            ยกเลิก
+                        </button>
+
+                        <button type="submit" class="personal-next">
+                            ถัดไป
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            ติดต่อ มจพ. ปราจีน
+
+            <br>
+
+            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+            วิทยาเขตปราจีนบุรี (มจพ. ปราจีนบุรี)
+            ตั้งอยู่ที่ 129 หมู่ที่ 21 ตำบลเนินหอม
+            อำเภอเมือง จังหวัดปราจีนบุรี 25230
+
+            <br>
+
+            เบอร์โทรศัพท์: 037-217-300
+            &nbsp;&nbsp;
+            โทรสาร: 037-217-333
+
+            <br>
+
+            webag@op.kmutnb.ac.th
+
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

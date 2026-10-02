@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หลักสูตรทั้งหมด</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <img src="img/banner.jpg" alt="โลโก้ มจพ.">
+        </header>
+
+        <!-- Admission Bar -->
+
+        <div class="admission">
+
+            <div>
+                <img src="img/ADMISSION.png" alt="ADMISSION" width="380" height="70">
+            </div>
+            <div class="page-tools">
+
+                <div class="page-title">
+                    <h2>หลักสูตรทั้งหมด</h2>
+                    <h5>ค้นหาหลักสูตรที่เปิดรับสมัคร</h5>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="ค้นหาหลักสูตร / คณะ / สาขา">
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="sign-in" onclick="window.location.href='เข้าสู่ระบบ.html'">
+                <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+                <i class="bi bi-person"></i>
+                &nbsp; Sign in
+            </button>
+
+        </div>
+
+        <div class="main">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <a href="index.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>หน้าหลัก</span>
+                    </div>
+                </a>
+                <a href="หลักสูตรทั้งหมด.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-list"></i>
+                        <span>หลักสูตรทั้งหมด</span>
+                    </div>
+                </a>
+                <a href="รายละเอียดการสมัคร.html">
+                    <div class="menu active">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span>รายละเอียดการสมัคร</span>
+                    </div>
+                </a>
+                <a href="ข้อมูลส่วนตัว.html">
+                    <div class="menu active">
+                        <i class="fa-regular fa-rectangle-list"></i>
+                        <span>กรอกใบสมัคร</span>
+                    </div>
+                </a>
+                <a href="ติดต่อเรา.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>ติดต่อเรา</span>
+                    </div>
+                </a>
+            </aside>
+
+            <!-- CONTENT -->
+            <main class="content">
+                <!-- หลักสูตร -->
+                <div class="course-container">
+                    <!-- คณะเทคโนโลยีและการจัดการอุตสาหกรรม -->
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="bi bi-person-vcard"></i>
+                        </div>
+                        <div class="course-detail">
+                            <h2>
+                                คณะเทคโนโลยีและการจัดการอุตสาหกรรม
+                            </h2>
+                            <ul>
+                                <li>เทคโนโลยีสารสนเทศ</li>
+                                <li>เทคโนโลยีคอมพิวเตอร์</li>
+                                <li>วิศวกรรมการผลิต</li>
+                                <li>วิศวกรรมอุตสาหการ</li>
+                                <li>วิศวกรรมวัสดุ</li>
+                                <li>วิศวกรรมระบบอัตโนมัติ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- คณะอุตสาหกรรมเกษตร -->
+                    <div class="course-card">
+                        <div class="course-icon orange">
+                            <i class="bi bi-bar-chart-line"></i>
+                        </div>
+                        <div class="course-detail">
+                            <h2>
+                                คณะอุตสาหกรรมเกษตร
+                            </h2>
+
+                            <ul>
+                                <li>เทคโนโลยีการหมัก</li>
+                                <li>เทคโนโลยีอุตสาหกรรมเกษตร</li>
+                                <li>วิทยาศาสตร์การอาหาร</li>
+                                <li>เทคโนโลยีชีวภาพ</li>
+                                <li>วิทยาศาสตร์การอาหาร</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- คณะบริหารธุรกิจ -->
+                    <div class="course-card course-card-center">
+
+                        <div class="course-icon red">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+
+                        <div class="course-detail">
+
+                            <h2>
+                                คณะบริหารธุรกิจและอุตสาหกรรมบริการ
+                            </h2>
+
+                            <ul>
+                                <li>การจัดการอุตสาหกรรมท่องเที่ยว</li>
+                                <li>บริหารธุรกิจ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            ติดต่อ มจพ. ปราจีน
+            <br>
+            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+            วิทยาเขตปราจีนบุรี (มจพ. ปราจีนบุรี)
+            ตั้งอยู่ที่ 129 หมู่ที่ 21 ตำบลเนินหอม
+            อำเภอเมือง จังหวัดปราจีนบุรี 25230
+            <br>
+            เบอร์โทรศัพท์: 037-217-300
+            &nbsp;&nbsp;
+            โทรสาร: 037-217-333
+            <br>
+            webag@op.kmutnb.ac.th
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รับสมัครนักศึกษาใหม่</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <img src="img/banner.jpg" alt="โลโก้ มจพ.">
+        </header>
+
+        <!-- Admission Bar -->
+
+        <div class="admission">
+
+            <div>
+                <img src="img/ADMISSION.png" alt="ADMISSION" width="380" height="70">
+            </div>
+            <div class="page-tools">
+
+                <div class="page-title">
+                    <h2>กรอกใบสมัคร</h2>
+                    <h5>กรุณากรอกข้อมูลให้ครบถ้วนและถูกต้อง เพื่อใช้ในการสมัครเข้าศึกษาต่อ</h5>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="ค้นหาหลักสูตร / คณะ / สาขา">
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+            </div>
+
+
+            <button class="sign-in" onclick="window.location.href='เข้าสู่ระบบ.html'">
+
+                <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+                <i class="bi bi-person"></i>
+                &nbsp; Sign in
+            </button>
+
+        </div>
+
+        <div class="main">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <a href="index.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>หน้าหลัก</span>
+                    </div>
+                </a>
+                <a href="หลักสูตรทั้งหมด.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-list"></i>
+                        <span>หลักสูตรทั้งหมด</span>
+                    </div>
+                </a>
+                <a href="รายละเอียดการสมัคร.html">
+                    <div class="menu active">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span>รายละเอียดการสมัคร</span>
+                    </div>
+                </a>
+                <a href="ข้อมูลส่วนตัว.html">
+                    <div class="menu active">
+                        <i class="fa-regular fa-rectangle-list"></i>
+                        <span>กรอกใบสมัคร</span>
+                    </div>
+                </a>
+                <a href="ติดต่อเรา.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>ติดต่อเรา</span>
+                    </div>
+                </a>
+            </aside>
+            <main class="content">
+
+                <div class="review-content">
+
+                    <!-- ขั้นตอน -->
+                    <div class="apply-steps">
+
+                        <div class="apply-step done">
+                            <div class="step-number">✓</div>
+                            <span>ข้อมูลส่วนตัว</span>
+                        </div>
+
+                        <div class="apply-line done"></div>
+
+                        <div class="apply-step done">
+                            <div class="step-number">✓</div>
+                            <span>ข้อมูลการศึกษา</span>
+                        </div>
+
+                        <div class="apply-line done"></div>
+
+                        <div class="apply-step active">
+                            <div class="step-number">✓</div>
+                            <span>ข้อมูลเพิ่มเติม</span>
+                        </div>
+
+                        <div class="apply-line done"></div>
+
+                        <div class="apply-step active">
+                            <div class="step-number">4</div>
+                            <span>ตรวจสอบข้อมูล</span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- กล่องสรุปทั้งหมด -->
+                    <form class="personal-form" action="ยืนยันการสมัคร.html" method="get">
+                        <div class="review-box">
+
+                            <!-- ================= ข้อมูลส่วนตัว ================= -->
+                            <div class="review-section">
+
+                                <div class="review-section-title">
+                                    <i class="fa-solid fa-user"></i>
+                                    <h2>1. ข้อมูลส่วนตัว</h2>
+                                </div>
+
+                                <div class="review-data">
+
+                                    <div class="review-row">
+                                        <span>ชื่อ - นามสกุล</span>
+                                        <strong id="review-fullname">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>เลขบัตรประชาชน</span>
+                                        <strong id="review-idcard">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>วันเกิด</span>
+                                        <strong id="review-birthday">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>เพศ</span>
+                                        <strong id="review-gender">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>เบอร์โทรศัพท์</span>
+                                        <strong id="review-phone" >-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>อีเมล</span>
+                                        <strong id="review-email">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>ที่อยู่ปัจจุบัน</span>
+                                        <strong id="review-address">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>จังหวัด</span>
+                                        <strong id="review-province">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>ระดับการศึกษา</span>
+                                        <strong id="review-level">-</strong>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= ข้อมูลการศึกษา ================= -->
+                            <div class="review-section">
+
+                                <div class="review-section-title">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <h2>2. ข้อมูลการศึกษา</h2>
+                                </div>
+
+                                <div class="review-data">
+
+                                    <div class="review-row">
+                                        <span>ระดับการศึกษาที่สมัคร</span>
+                                        <strong id="review-edu-level">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>คณะ / สาขาที่ต้องการสมัคร</span>
+                                        <strong id="review-faculty">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>โรงเรียน / สถานศึกษา</span>
+                                        <strong id="review-school">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>จังหวัดของสถานศึกษา</span>
+                                        <strong id="review-school-province">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>วุฒิการศึกษา</span>
+                                        <strong id="review-qualification">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>ปีที่จบการศึกษา</span>
+                                        <strong id="review-graduation-year">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>เกรดเฉลี่ยสะสม (GPA)</span>
+                                        <strong id="review-gpa">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>แผนการเรียน / สายการเรียน</span>
+                                        <strong id="review-study-plan">-</strong>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= ข้อมูลเพิ่มเติม ================= -->
+                            <div class="review-section">
+
+                                <div class="review-section-title">
+                                    <i class="fa-regular fa-address-card"></i>
+                                    <h2>3. ข้อมูลเพิ่มเติม</h2>
+                                </div>
+
+                                <div class="review-data">
+
+                                    <div class="review-row">
+                                        <span>ประเภทการรับสมัคร</span>
+                                        <strong id="review-admission-type">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>รอบการสมัคร</span>
+                                        <strong id="review-round">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>แหล่งที่ทราบข่าวการสมัคร</span>
+                                        <strong id="review-source">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>บิดา / ผู้ปกครอง</span>
+                                        <strong id="review-parent-status">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>เบอร์โทรศัพท์ผู้ปกครอง</span>
+                                        <strong id="review-parent-phone">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>อาชีพผู้ปกครอง</span>
+                                        <strong id="review-parent-job">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>ชื่อ - นามสกุล มารดา / ผู้ปกครอง</span>
+                                        <strong id="review-parent-name">-</strong>
+                                    </div>
+
+                                    <div class="review-row">
+                                        <span>เบอร์โทรมารดา / ผู้ปกครอง</span>
+                                        <strong id="review-mother-phone">-</strong>
+                                    </div>
+
+                                    <div class="review-row full">
+                                        <span>ความต้องการทุนการศึกษา</span>
+                                        <strong id="review-scholarship">-</strong>
+                                    </div>
+
+                                    <div class="review-row full">
+                                        <span>เอกสารประกอบการสมัคร</span>
+                                        <strong id="review-documents">-</strong>
+                                    </div>
+
+                                    <div class="review-row full">
+                                        <span>เหตุผลที่เลือกสมัครสาขานี้</span>
+                                        <strong id="review-reason">-</strong>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ปุ่ม -->
+                        <div class="review-buttons">
+
+                            <a href="ข้อมูลเพิ่มเติม.html" class="extra-back">
+                                ย้อนกลับ
+                            </a>
+
+                            <button type="submit" class="personal-next">
+                                ถัดไป
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+
+                </div>
+
+            </main>
+            </form>
+
+
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            ติดต่อ มจพ. ปราจีน
+
+            <br>
+
+            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+            วิทยาเขตปราจีนบุรี (มจพ. ปราจีนบุรี)
+            ตั้งอยู่ที่ 129 หมู่ที่ 21 ตำบลเนินหอม
+            อำเภอเมือง จังหวัดปราจีนบุรี 25230
+
+            <br>
+
+            เบอร์โทรศัพท์: 037-217-300
+            &nbsp;&nbsp;
+            โทรสาร: 037-217-333
+
+            <br>
+
+            webag@op.kmutnb.ac.th
+
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

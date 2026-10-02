@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รับสมัครนักศึกษาใหม่</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <img src="img/banner.jpg" alt="โลโก้ มจพ.">
+        </header>
+
+        <!-- Admission Bar -->
+
+        <div class="admission">
+
+            <div>
+                <img src="img/ADMISSION.png" alt="ADMISSION" width="380" height="70">
+            </div>
+            <div class="page-tools">
+
+                <div class="page-title">
+                    <h2>กรอกใบสมัคร</h2>
+                    <h5>กรุณากรอกข้อมูลให้ครบถ้วนและถูกต้อง เพื่อใช้ในการสมัครเข้าศึกษาต่อ</h5>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="ค้นหาหลักสูตร / คณะ / สาขา">
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+            </div>
+
+
+            <button class="sign-in" onclick="window.location.href='เข้าสู่ระบบ.html'">
+
+                <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+                <i class="bi bi-person"></i>
+                &nbsp; Sign in
+            </button>
+
+        </div>
+
+        <div class="main">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <a href="index.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>หน้าหลัก</span>
+                    </div>
+                </a>
+                <a href="หลักสูตรทั้งหมด.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-list"></i>
+                        <span>หลักสูตรทั้งหมด</span>
+                    </div>
+                </a>
+                <a href="รายละเอียดการสมัคร.html">
+                    <div class="menu active">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span>รายละเอียดการสมัคร</span>
+                    </div>
+                </a>
+                <a href="ข้อมูลส่วนตัว.html">
+                    <div class="menu active">
+                        <i class="fa-regular fa-rectangle-list"></i>
+                        <span>กรอกใบสมัคร</span>
+                    </div>
+                </a>
+                <a href="ติดต่อเรา.html">
+                    <div class="menu active">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>ติดต่อเรา</span>
+                    </div>
+                </a>
+            </aside>
+            <!-- CONTENT : ข้อมูลการศึกษา -->
+            <main class="content">
+
+                <div class="education-content">
+
+
+                    <!-- ขั้นตอน -->
+                    <div class="education-steps">
+
+                        <div class="education-step education-step-done">
+                            <div class="education-step-number">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>ข้อมูลส่วนตัว</span>
+                        </div>
+
+                        <div class="education-step education-step-active">
+                            <div class="education-step-number">2</div>
+                            <span>ข้อมูลการศึกษา</span>
+                        </div>
+
+                        <div class="education-step">
+                            <div class="education-step-number">3</div>
+                            <span>ข้อมูลเพิ่มเติม</span>
+                        </div>
+
+                        <div class="education-step">
+                            <div class="education-step-number">4</div>
+                            <span>ตรวจสอบข้อมูล</span>
+                        </div>
+
+                    </div>
+                    <form class="personal-form" action="ข้อมูลเพิ่มเติม.html" method="get">
+
+                        <!-- กล่องข้อมูลการศึกษา -->
+                        <section class="education-form">
+
+                            <div class="education-form-title">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <h2>2. ข้อมูลการศึกษา</h2>
+                            </div>
+
+
+                            <div class="education-form-body">
+
+                                <!-- ระดับการศึกษา -->
+                                <div class="education-field">
+                                    <label>
+                                        ระดับการศึกษาที่สมัคร
+                                        <span>*</span>
+                                    </label>
+
+                                    <select required>
+                                        <option value="">ปริญญาตรี</option>
+                                        <option>ปริญญาตรี</option>
+                                        <option>ประกาศนียบัตร</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- คณะ / สาขา -->
+                                <div class="education-field">
+                                    <label>
+                                        คณะ/สาขาที่ต้องการสมัคร
+                                        <span>*</span>
+                                    </label>
+
+                                    <select required>
+                                        <option value="">เลือกคณะ/สาขา</option>
+                                        <option>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                                        <option>คณะอุตสาหกรรมเกษตร</option>
+                                        <option>คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- โรงเรียน -->
+                                <div class="education-field">
+                                    <label>
+                                        โรงเรียน/สถานศึกษาที่จบหรือกำลังศึกษาอยู่
+                                        <span>*</span>
+                                    </label>
+
+                                    <input type="text" placeholder="กรอกชื่อโรงเรียน/สถานศึกษา" required>
+                                </div>
+
+
+                                <!-- จังหวัด -->
+                                <div class="education-field">
+                                    <label>
+                                        จังหวัดของสถานศึกษา
+                                        <span>*</span>
+                                    </label>
+
+                                    <select required>
+                                        <option value="">เลือกจังหวัด</option>
+                                        <option>กรุงเทพมหานคร</option>
+                                        <option>ชลบุรี</option>
+                                        <option>ปราจีนบุรี</option>
+                                        <option>นครนายก</option>
+                                        <option>อื่น ๆ</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- วุฒิการศึกษา -->
+                                <div class="education-field">
+                                    <label>
+                                        วุฒิการศึกษา
+                                        <span>*</span>
+                                    </label>
+
+                                    <select required>
+                                        <option value="">เลือกวุฒิการศึกษา</option>
+                                        <option>ม.6</option>
+                                        <option>ปวช.</option>
+                                        <option>ปวส.</option>
+                                        <option>เทียบเท่า</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- ปีที่จบ -->
+                                <div class="education-field">
+                                    <label>
+                                        ปีที่จบการศึกษา
+                                        <span>*</span>
+                                    </label>
+
+                                    <select required>
+                                        <option value="">เลือกปีที่จบ</option>
+                                        <option>2567</option>
+                                        <option>2568</option>
+                                        <option>2569</option>
+                                        <option>2570</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- GPA -->
+                                <div class="education-field">
+                                    <label>
+                                        เกรดเฉลี่ยสะสม (GPA)
+                                        <span>*</span>
+                                    </label>
+
+                                    <input type="number" step="0.01" min="0" max="4" placeholder="เช่น 3.25" required>
+                                </div>
+
+
+                                <!-- แผนการเรียน -->
+                                <div class="education-field">
+                                    <label>
+                                        แผนการเรียน/สายการเรียน
+                                        <span>*</span>
+                                    </label>
+
+                                    <select required>
+                                        <option value="">เลือกแผนการเรียน</option>
+                                        <option>วิทยาศาสตร์ - คณิตศาสตร์</option>
+                                        <option>ศิลป์คำนวณ</option>
+                                        <option>ศิลป์ภาษา</option>
+                                        <option>อาชีวศึกษา</option>
+                                        <option>อื่น ๆ</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- เอกสาร -->
+                                <div class="education-field education-file-field">
+
+                                    <label>
+                                        เอกสารแสดงผลการเรียน (ปพ.1)
+                                        <span>*</span>
+                                    </label>
+
+                                    <label class="education-upload">
+
+                                        <i class="fa-solid fa-camera"></i>
+
+                                        <span>คลิกเพื่ออัปโหลดไฟล์</span>
+
+                                        <small>
+                                            (ไฟล์ PDF, JPG, PNG ขนาดไม่เกิน 2 MB)
+                                        </small>
+
+                                        <input type="file" accept=".pdf,.jpg,.jpeg,.png" required>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ปุ่ม -->
+                            <div class="personal-buttons">
+
+                                <a href="ข้อมูลส่วนตัว.html" class="extra-back">
+                                    ย้อนกลับ
+                                </a>
+
+                                <button type="submit" class="personal-next">
+                                    ถัดไป
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+                            </div>
+
+                        </section>
+                    </form>
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        ติดต่อ มจพ. ปราจีน
+        <br>
+        มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+        วิทยาเขตปราจีนบุรี (มจพ. ปราจีนบุรี)
+        ตั้งอยู่ที่ 129 หมู่ที่ 21 ตำบลเนินหอม
+        อำเภอเมือง จังหวัดปราจีนบุรี 25230
+        <br>
+        เบอร์โทรศัพท์: 037-217-300
+        &nbsp;&nbsp;
+        โทรสาร: 037-217-333
+        <br>
+        webag@op.kmutnb.ac.th
+    </footer>
+    </div>
+</body>
+
+</html>
